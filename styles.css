@@ -276,3 +276,12 @@ body {
 .accordion-btn.active {
   background-color: #0055aa;
 }
+
+.travel-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
