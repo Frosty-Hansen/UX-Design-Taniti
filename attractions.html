@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taniti Island</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <nav>
+    <button onclick="window.location.href='index.html'">Home</button>
+    <button onclick="window.location.href='about.html'">About</button>
+    <button onclick="window.location.href='lodging.html'">Lodging</button>
+    <button onclick="window.location.href='dining.html'">Dining</button>
+    <button onclick="window.location.href='attractions.html'">Attractions</button>
+    <button onclick="window.location.href='info.html'">Travel Info</button>
+    <button onclick="window.location.href='book.html'">Book Now</button>
+ </nav>
+
+ <header class="banner">
+    <h1>Have fun on Taniti Island</h1>  
+ </header>
+
+ <section class="accordion">
+    <button class="accordion-btn"> Nightlife</button>
+    <div class="accordion-content">
+      <ul>
+        <li>Several pubs, including a microbrewery</li>
+        <li>New dance club</li>
+        <li>Movie theater</li>
+        <li>Arcade</li>
+        <li>Bowling alley</li>
+      </ul>
+    </div>
+
+    <button class="accordion-btn"> In Town</button>
+    <div class="accordion-content">
+      <ul>
+        <li>Local history museum</li>
+        <li>Art galleries</li>
+        <li>Chartered fishing tours</li>
+        <li>Merriton Landing: a developing area with attractions</li>
+      </ul>
+    </div>
+
+    <button class="accordion-btn"> Outdoors</button>
+    <div class="accordion-content">
+      <ul>
+        <li>Beaches</li>
+        <li>Rainforest exploration</li>
+        <li>Volcano visit</li>
+        <li>Snorkeling</li>
+        <li>Zip-lining in the rainforest</li>
+        <li>Helicopter rides</li>
+        <li>Nine-hole golf course (coming soon)</li>
+      </ul>
+    </div>
+  </section>
+
+
+<footer class="footer">
+  <div class="contact-info">
+    Contact Us: info@tanitiisland.com | +1 (555) 123-4567 | 123 Taniti Island Rd
+  </div>
+  <div class="social-media">
+    <a href="https://facebook.com" target="_blank">Facebook</a>
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+    <a href="https://twitter.com" target="_blank">Twitter</a>
+  </div>
+  <div class="copyright">
+    &copy; 2025 Taniti Island. All rights reserved.
+  </div>
+</footer>
+<script>
+    const accBtns = document.querySelectorAll(".accordion-btn");
+    accBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        let content = btn.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
