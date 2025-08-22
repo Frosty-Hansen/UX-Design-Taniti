@@ -123,3 +123,68 @@ nav button:hover {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
 }
 
+.lodging-intro {
+  max-width: 900px;
+  margin: 40px auto;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 80px;
+}
+
+.lodging-options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.lodging-card {
+  background-color: #f9f9f9;
+  border: 2px solid #003366;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.lodging-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.lodging-card:hover {
+  transform: translateY(-5px);
+  background-color: #e6f2ff;
+}
+
+.book-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #003366;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #0055aa;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-bottom: 80px; 
+}
